@@ -44,7 +44,6 @@ function onStartButtonClick(selectedDates) {
       return;
     }
     convertMs(time - new Date());
-    console.log(time - new Date());
 
     refs.days.textContent = addLeadingZero(`${timerObj.days}`);
     refs.hours.textContent = addLeadingZero(`${timerObj.hours}`);

@@ -12,10 +12,12 @@ function onStartClick() {
     return;
   };
   intervalId = setInterval(bgColorSwither, 1000);
+  startButtonEl.setAttribute('disabled', 'true');
 };
 
 function onStopClick() {
   clearInterval(intervalId);
+  startButtonEl.removeAttribute('disabled');
 };
 
 function bgColorSwither() {
